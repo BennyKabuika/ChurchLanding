@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.mockup-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 600px; /* Ajuste si nécessaire */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.mockup-center {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.mockup-absolute {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.mockup-left {
+  left: 10%;
+  transform: translateY(-60%); /* Ajuste pour que ce soit "plus haut" */
+}
+
+.mockup-right {
+  right: 10%;
+  transform: translateY(-60%);
+}
+
+.mockup-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20rem;
+  background: linear-gradient(to top, black, transparent);
+  border-radius: 0.375rem;
+}
+
+@media (max-width: 768px) {
+  .mockup-wrapper {
+    height: auto;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .mockup-absolute {
+    position: static;
+    transform: none;
+  }
+  .mockup-left,
+  .mockup-right {
+    left: auto;
+    right: auto;
+  }
+  .mockup-center {
+    margin-bottom: 2rem;
+  }
 }
