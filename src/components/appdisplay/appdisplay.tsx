@@ -57,7 +57,7 @@ export default function AppDisplay() {
           >
             
             <div
-              className={`flex flex-col md:${isImageRight ? "flex-row-reverse" : "flex-row"} gap-12 items-center`}
+              className={`flex flex-col ${isImageRight ? "md:flex-row-reverse" : "md:flex-row"} gap-12 items-center`}
             >
               {/* Image */}
               <div

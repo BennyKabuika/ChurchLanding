@@ -5,8 +5,11 @@ import Image from "next/image";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 import { colors } from "@/app/color";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <header className="bg-black text-white relative overflow-hidden">
       <Navbar />
@@ -24,7 +27,13 @@ export default function Header() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           className="text-6xl font-bold mt-20 mb-4 font-instrument"
         >
-          CHURCH+
+          <Image
+                    src="/images/logochurch.png"
+                    alt="Church+ Logo"
+                    width={350}
+                    height={350}
+                    className="mb-8"
+                  />
         </motion.h1>
 
         <motion.p
@@ -41,6 +50,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
           className="rounded-lg bg-white text-black px-8 py-4 text-lg font-semibold shadow-md hover:bg-gray-200 transition cursor-pointer mb-6 font-instrument"
+          onClick={() => router.push("/waitlist")}
         >
           Accéder en avant-première
         </motion.button>

@@ -78,13 +78,13 @@ export default function Main() {
       <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center items-center text-center divide-y-0 md:divide-x divide-gray-800 border-gray-800">
        
         <div className="flex-1 py-10 px-6">
-          <Counter to={40} displayValue="40 millions" />
+          <Counter to={40} suffix="millions+" />
           <p className="text-gray-400 mt-3">Nombre d&apos;églises dans le monde.</p>
         </div>
 
         {/* 70k+ */}
         <div className="flex-1 py-10 px-6">
-          <Counter to={70} displayValue="70k" />
+          <Counter to={70} suffix="k+" />
           <p className="text-gray-400 mt-3">
             Chaque jour plus de 70 000 personnes deviennent chrétiennes dans le monde.
           </p>
@@ -92,7 +92,7 @@ export default function Main() {
 
         {/* 190+ */}
         <div className="flex-1 py-10 px-6">
-          <Counter to={190} />
+          <Counter to={190} suffix="+" />
           <p className="text-gray-400 mt-3">
             Plus de 190 pays touchés par l&apos;Évangile.
           </p>

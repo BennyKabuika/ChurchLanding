@@ -6,7 +6,7 @@ import { colors } from "@/app/color";
 
 export default function Discover() {
   return (
-    <section className="bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center">
+    <section className="bg-[#454444] text-white py-24 px-4 md:px-8 flex flex-col items-center">
 
       {/* Texte en haut */}
       <div className="mb-6">
@@ -21,7 +21,7 @@ export default function Discover() {
       </h2>
 
       {/* Petit texte gris */}
-      <p className="text-gray-400 text-center max-w-2xl mb-20">
+      <p className=" text-center max-w-2xl mb-20">
         Une application révolutionnaire qui transforme la façon dont les églises et les communautés chrétiennes se connectent.
       </p>
 

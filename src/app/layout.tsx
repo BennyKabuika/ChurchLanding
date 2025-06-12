@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Church+ | L'application qui transforme la vie de votre église.",
+  title: "Church+",
   description: "Church+ aide chaque église à accompagner ses membres pour que l’Évangile devienne une réalité vivante dans leur quotidien.",
 };
 

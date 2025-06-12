@@ -200,3 +200,40 @@ export const AppData = [
         ]
     }
 ]
+export const FAQData = [
+    {
+        id: 1,
+        question: 'Qu’est-ce que Church+ ?',
+        answer: 'Church+ est une plateforme qui accompagne les églises dans leur transformation digitale, avec des outils pour connecter, organiser, évangéliser et accompagner leurs membres.',
+    },
+    {
+        id: 2,
+        question: 'L’application est-elle gratuite ?',
+        answer: 'Oui, l’application de base est entièrement gratuite.',
+    },
+    {
+        id: 3,
+        question: 'Comment mes données sont-elles protégées?',
+        answer: 'Nous prenons la confidentialité très au sérieux. Toutes vos données personnelles sont cryptées et stockées de manière sécurisée. Nous ne partageons jamais vos informations avec  des tiers sans votre consentement explicite. Pour plus de details, consultez notre politique de confidentialité.',
+    },
+    {
+        id: 4,
+        question: 'Comment connecter Church+ avec le système de mon église ?',
+        answer: 'Pour connecter votre église à Church+, il suffit de faire une demande officielle depuis notre formulaire dédié. Une fois votre demande reçue, notre équipe prendra contact avec vous pour configurer et intégrer votre église dans l’application. Nous vous accompagnons étape par étape pour une mise en place simple et adaptée à vos besoins',
+    },
+    {
+        id: 5,
+        question: 'Comment télécharger Church+',
+        answer: 'Church+ sera disponible sur l\'App Store pour les appareils iOS et sur Google Play Store pour les appareils Android. Recherchez simplement \'Church+\' et téléchargez l\'application gratuitement.',
+    },
+    {
+        id: 6,
+        question: 'Est-ce que Church+ est accessible partout dans le monde ?',
+        answer: 'Oui, Church+ est conçu pour être utilisé par les églises dans le monde entier.',
+    },
+    {
+        id: 7,
+        question: 'Comment savoir quand Church+ sera disponible ?',
+        answer: 'Inscrivez-vous à notre liste d’attente pour recevoir toutes les informations et accéder à l’application en avant-première.',
+    },
+]
