@@ -27,13 +27,7 @@ export default function Header() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           className="text-6xl font-bold mt-20 mb-4 font-instrument"
         >
-          <Image
-                    src="/images/logochurch.png"
-                    alt="Church+ Logo"
-                    width={350}
-                    height={350}
-                    className="mb-8"
-                  />
+          CHURCH+
         </motion.h1>
 
         <motion.p
