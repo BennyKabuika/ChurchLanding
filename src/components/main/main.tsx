@@ -38,11 +38,11 @@ function Counter({
 }: {
   to: number;
   suffix?: string;
-  displayValue?: string; // affichage personnalisé final
+  displayValue?: string; 
   duration?: number;
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" }); // décalage pour déclencher un peu avant l’arrivée
+  const isInView = useInView(ref, { once: true, margin: "-100px" }); 
   const count = useCounter(to, duration, isInView);
 
   return (
@@ -82,7 +82,7 @@ export default function Main() {
           <p className="text-gray-400 mt-3">Nombre d&apos;églises dans le monde.</p>
         </div>
 
-        {/* 70k+ */}
+        
         <div className="flex-1 py-10 px-6">
           <Counter to={70} suffix="k+" />
           <p className="text-gray-400 mt-3">
@@ -90,7 +90,7 @@ export default function Main() {
           </p>
         </div>
 
-        {/* 190+ */}
+        
         <div className="flex-1 py-10 px-6">
           <Counter to={190} suffix="+" />
           <p className="text-gray-400 mt-3">

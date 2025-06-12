@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   });
 
   try {
-    // 1. Mail à l'admin
+    
     await transporter.sendMail({
       from: `"Church+ Waitlist" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER,
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       html: `<p><strong>Eglise:</strong> ${eglise}</p><p><strong>Email:</strong> ${email}</p>`,
     });
 
-    // 2. Mail de confirmation à l'église
+    
     await transporter.sendMail({
       from: `"Church+ Team" <${process.env.GMAIL_USER}>`,
       to: email,

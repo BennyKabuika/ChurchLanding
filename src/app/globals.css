@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  height: 600px; /* Ajuste si nécessaire */
+  height: 600px;
 }
 
 .mockup-center {
@@ -31,17 +31,17 @@
   transform: translateY(-60%);
 }
 
-/* Gradient accentué et agrandi */
+
 .mockup-gradient {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 24rem; /* Avant : 20rem => + haut */
+  height: 24rem; 
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), transparent);
-  border-radius: 0.5rem; /* Avant : 0.375rem => coins plus doux */
-  pointer-events: none; /* Pour éviter de gêner les interactions éventuelles */
-  filter: blur(4px); /* Ajoute un flou doux à l'ombre pour effet plus naturel */
+  border-radius: 0.5rem; 
+  pointer-events: none; 
+  filter: blur(4px); 
 }
 
 @media (max-width: 768px) {

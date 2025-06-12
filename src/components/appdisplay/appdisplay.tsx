@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import { JSX } from "react";
 
-// Map icons to your keys (complète selon tes besoins)
+
 const iconsMap: { [key: string]: JSX.Element } = {
   "discuss-alt": <MessageCircle className="w-6 h-6 text-white" />,
   "handshake-alt": <Handshake className="w-6 h-6 text-white" />,
@@ -48,7 +48,7 @@ export default function AppDisplay() {
   return (
     <section className="bg-black text-white py-24 px-4 md:px-8">
       {AppData.map((app, idx) => {
-        // idx pair (0,2,4...) image à droite, impair (1,3...) image à gauche
+        
         const isImageRight = idx % 2 === 0;
         return (
           <div
@@ -59,7 +59,7 @@ export default function AppDisplay() {
             <div
               className={`flex flex-col ${isImageRight ? "md:flex-row-reverse" : "md:flex-row"} gap-12 items-center`}
             >
-              {/* Image */}
+              
               <div
                 className="relative rounded-4xl overflow-hidden w-full md:w-[496px] h-[650px] flex items-center justify-center ml-auto mr-auto"
                 style={{
@@ -73,7 +73,7 @@ export default function AppDisplay() {
                   height={350}
                   className="object-contain z-10 translate-y-20"
                 />
-                {/* Overlay dégradé haut/bas */}
+                
                 <div className="absolute inset-0 z-20 pointer-events-none">
                   <div
                     className="absolute inset-x-0 top-0 h-26"
@@ -89,7 +89,7 @@ export default function AppDisplay() {
                   />
                 </div>
               </div>
-              {/* Cards */}
+              
               <div className="flex flex-col items-center w-full">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-instrument">
                   {app.title}

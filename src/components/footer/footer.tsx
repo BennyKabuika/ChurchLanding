@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="relative bg-black text-white pt-20 pb-8 px-4 md:px-8">
-      {/* Léger gradient blanc tout en haut */}
       <div
         className="absolute top-0 left-0 right-0 h-32 flex items-start justify-center pointer-events-none"
         aria-hidden="true"
@@ -32,7 +31,6 @@ export default function Footer() {
           <Mail className="w-6 h-6 mr-2" />
           contact@mkdynamics.be
         </a>
-        {/* Ligne séparatrice */}
         <div className="w-full h-px bg-gray-700 my-8" />
         <div className="w-full flex flex-row items-center justify-between text-md ml-auto">
           <a

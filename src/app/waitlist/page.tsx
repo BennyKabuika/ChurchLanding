@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar/navbar";
 import { colors } from "../color";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
-// Compteur jusqu'au 1er octobre 2025
+// Compteur 1er octobre 2025
 function Countdown() {
   const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number}>({
     days: 0, hours: 0, minutes: 0, seconds: 0
@@ -98,7 +98,7 @@ export default function Waitlist() {
           <span className="block font-bold text-lg text-gray-200 mb-2">DISPONIBLE BIENTOT !</span>
           Inscrivez-vous pour recevoir un accès à la version bêta en avant-première !
         </p>
-        {/* Formulaire */}
+        
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -142,7 +142,7 @@ export default function Waitlist() {
           {sent && <p className="text-green-400 text-center mt-2">Merci, votre inscription a bien été envoyée !</p>}
           {error && <p className="text-red-400 text-center mt-2">{error}</p>}
         </form>
-        {/* Compteur */}
+        
         <Countdown />
       </section>
       <div className="flex flex-col overflow-hidden">

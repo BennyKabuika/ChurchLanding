@@ -4,17 +4,13 @@ import Image from "next/image";
 export default function SectionApp() {
   return (
     <section className="bg-black text-white py-24 px-4 md:px-8 flex flex-col items-center justify-center">
-      {/* Titre principal */}
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 font-instrument">
         Disponible bientôt
       </h2>
-      {/* Sous-titre */}
       <p className="text-gray-400 text-center mb-12 max-w-xl">
         Dès son lancement, Church+ révolutionnera la vie de votre église.
       </p>
-      {/* Boutons de store */}
       <div className="flex flex-row gap-6 mb-16">
-        {/* Google Play */}
         <a
           href="https://play.google.com/store/"
           target="_blank"
@@ -33,7 +29,6 @@ export default function SectionApp() {
             <span className="text-black text-base font-bold">Google Play</span>
           </div>
         </a>
-        {/* App Store */}
         <a
           href="https://www.apple.com/fr/app-store/"
           target="_blank"
@@ -53,7 +48,6 @@ export default function SectionApp() {
           </div>
         </a>
       </div>
-      {/* Mockups */}
       <div className="flex flex-row items-end gap-6 mt-8">
         <Image
           src="/images/mockupame.png"

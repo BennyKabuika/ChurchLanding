@@ -13,8 +13,6 @@ export default function Header() {
   return (
     <header className="bg-black text-white relative overflow-hidden">
       <Navbar />
-
-      {/* Contenu textuel */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -83,11 +81,8 @@ export default function Header() {
           </div>
         </motion.div>
       </motion.div>
-
-      {/* Mockups */}
       <div className="mockup-wrapper">
 
-        {/* Mockup Planning gauche */}
         <motion.div
           initial={{ opacity: 0, x: -50, y: 30 }}
           animate={{ opacity: 1, x: -50, y: -280 }} // PLUS HAUT
@@ -104,7 +99,6 @@ export default function Header() {
           <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
         </motion.div>
 
-        {/* Mockup Church centre */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: -80 }}
@@ -121,10 +115,9 @@ export default function Header() {
           <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
         </motion.div>
 
-        {/* Mockup Impact droite */}
         <motion.div
           initial={{ opacity: 0, x: 50, y: 30 }}
-          animate={{ opacity: 1, x: 50, y: -280 }} // PLUS HAUT
+          animate={{ opacity: 1, x: 50, y: -280 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1 }}
           className="mockup-absolute mockup-right"
         >
