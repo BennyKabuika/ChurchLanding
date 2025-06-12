@@ -44,7 +44,7 @@ export default function Footer() {
             MKDynamics
           </a>
           <a
-            href="/app/privacy-policy"
+            href="/privacy-policy"
             className="text-gray-400 hover:text-white transition-colors"
           >
             Politique de confidentialité
