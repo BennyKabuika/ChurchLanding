@@ -23,7 +23,7 @@
 
 .mockup-left {
   left: 10%;
-  transform: translateY(-60%); /* Ajuste pour que ce soit "plus haut" */
+  transform: translateY(-60%);
 }
 
 .mockup-right {
@@ -31,14 +31,17 @@
   transform: translateY(-60%);
 }
 
+/* Gradient accentué et agrandi */
 .mockup-gradient {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20rem;
-  background: linear-gradient(to top, black, transparent);
-  border-radius: 0.375rem;
+  height: 24rem; /* Avant : 20rem => + haut */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), transparent);
+  border-radius: 0.5rem; /* Avant : 0.375rem => coins plus doux */
+  pointer-events: none; /* Pour éviter de gêner les interactions éventuelles */
+  filter: blur(4px); /* Ajoute un flou doux à l'ombre pour effet plus naturel */
 }
 
 @media (max-width: 768px) {
