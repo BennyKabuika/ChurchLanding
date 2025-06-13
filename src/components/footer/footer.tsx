@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="w-full h-px bg-gray-700 my-8" />
         <div className="w-full flex flex-row items-center justify-between text-md ml-auto">
           <a
-            href="https://mkdynamics.be"
+            href="https://www.mkdynamics.be"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
