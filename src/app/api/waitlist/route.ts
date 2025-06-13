@@ -9,18 +9,20 @@ export async function POST(req: Request) {
   }
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host : 'smtpout.secure.net',
+    port : 587,
+    secure: false, 
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
+      user: process.env.GODADDY_USER,
+      pass: process.env.GODADDY_PASS,
     },
   });
 
   try {
     
     await transporter.sendMail({
-      from: `"Church+ Waitlist" <${process.env.GMAIL_USER}>`,
-      to: process.env.GMAIL_USER,
+      from: `"Church+ Waitlist" <${process.env.GODADDY_USER}>`,
+      to: process.env.GODADDY_USER,
       subject: "Nouvelle inscription à la waitlist Church+",
       text: `Eglise: ${eglise}\nEmail: ${email}`,
       html: `<p><strong>Eglise:</strong> ${eglise}</p><p><strong>Email:</strong> ${email}</p>`,
@@ -28,16 +30,16 @@ export async function POST(req: Request) {
 
     
     await transporter.sendMail({
-      from: `"Church+ Team" <${process.env.GMAIL_USER}>`,
+      from: `"Church+ Team" <${process.env.GODADDY_USER}>`,
       to: email,
       subject: "Confirmation d'inscription à la version bêta Church+",
       text: `Bonjour ${eglise},
 
-Merci pour votre inscription à la version bêta de Church+ !
-Vous recevrez prochainement toutes les informations pour accéder à l'application en avant-première.
+        Merci pour votre inscription à la version bêta de Church+ !
+        Vous recevrez prochainement toutes les informations pour accéder à l'application en avant-première.
 
-Que Dieu vous bénisse,
-L'équipe Church+`,
+        Que Dieu vous bénisse,
+        L'équipe Church+`,
       html: `<p>Bonjour <strong>${eglise}</strong>,</p>
 <p>Merci pour votre inscription à la version bêta de <strong>Church+</strong> !<br/>
 Vous recevrez prochainement toutes les informations pour accéder à l'application en avant-première.</p>

@@ -166,6 +166,7 @@ export default function Waitlist() {
           draggable={false}
           autoPlay
           loop
+          muted
           
         />
       </ContainerScroll>
