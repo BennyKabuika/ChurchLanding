@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 
@@ -56,17 +55,6 @@ function Counter({
 export default function Main() {
   return (
     <main className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-4 py-16">
-      
-      <div className="mb-10">
-        <Image
-          src="/images/logo.png"
-          alt="Logo Church+"
-          width={150}
-          height={150}
-          className="object-contain"
-        />
-      </div>
-
       
       <h1 className="text-center text-3xl md:text-5xl font-semibold leading-tight max-w-3xl mb-20 text-white font-instrument">
         Connecter les églises. <br />

@@ -81,56 +81,57 @@ export default function Header() {
           </div>
         </motion.div>
       </motion.div>
-      <div className="mockup-wrapper">
-
+      <div className="mockup-wrapper flex justify-center items-end relative">
+        {/* Mockup gauche - caché sur mobile */}
         <motion.div
           initial={{ opacity: 0, x: -50, y: 30 }}
-          animate={{ opacity: 1, x: -50, y: -280 }} // PLUS HAUT
+          animate={{ opacity: 1, x: -50, y: -280 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1 }}
-          className="mockup-absolute mockup-left"
+          className="mockup-absolute mockup-left hidden md:block"
         >
           <Image
             src="/images/mockupplanning2.png"
             alt="Mockup Planning"
-            width={230}
-            height={430}
-            className="object-contain rounded-md"
+            width={150} // taille réduite tablette
+            height={280}
+            className="object-contain rounded-md md:w-[150px] md:h-[280px] lg:w-[230px] lg:h-[430px]"
           />
-          <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
+          <div className="absolute bottom-0 left-0 right-0 h-40 md:h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
         </motion.div>
 
+        {/* Mockup centre - toujours visible, taille adaptée */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
-          animate={{ opacity: 1, scale: 1, y: -80 }}
+          animate={{ opacity: 1, scale: 1, y: -120 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
           className="mockup-center"
         >
           <Image
             src="/images/mockupchurch.png"
             alt="Mockup Church"
-            width={350}
-            height={550}
-            className="object-contain rounded-md"
+            width={200}
+            height={320}
+            className="object-contain rounded-md w-[180px] h-[320px] md:w-[200px] md:h-[350px] lg:w-[350px] lg:h-[550px]"
           />
-          <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
+          <div className="absolute bottom-0 left-0 right-0 h-40 md:h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
         </motion.div>
 
+        {/* Mockup droite - caché sur mobile */}
         <motion.div
           initial={{ opacity: 0, x: 50, y: 30 }}
           animate={{ opacity: 1, x: 50, y: -280 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1 }}
-          className="mockup-absolute mockup-right"
+          className="mockup-absolute mockup-right hidden md:block"
         >
           <Image
             src="/images/mockupimpact2.png"
             alt="Mockup Impact"
-            width={230}
-            height={430}
-            className="object-contain rounded-md"
+            width={150}
+            height={280}
+            className="object-contain rounded-md md:w-[150px] md:h-[280px] lg:w-[230px] lg:h-[430px]"
           />
-          <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
+          <div className="absolute bottom-0 left-0 right-0 h-40 md:h-80 bg-gradient-to-t from-black to-transparent rounded-md" />
         </motion.div>
-
       </div>
     </header>
   );

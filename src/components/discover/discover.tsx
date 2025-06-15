@@ -51,10 +51,10 @@ export default function Discover() {
 
         <div className="flex justify-center items-center">
           <Image
-            src="/images/mockupsignin.png"
+            src="/images/logo.png"
             alt="Mockup Sign In"
-            width={450}
-            height={600}
+            width={150}
+            height={150}
             className="object-contain rounded-lg"
           />
         </div>
