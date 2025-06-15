@@ -207,9 +207,9 @@ export const FAQData = [
         answer: 'Church+ est une plateforme qui accompagne les églises dans leur transformation digitale, avec des outils pour connecter, organiser, évangéliser et accompagner leurs membres.',
     },
     {
-        id: 2,
-        question: 'L’application est-elle gratuite ?',
-        answer: 'Oui, l’application de base est entièrement gratuite.',
+    id: 2,
+    question: "Puis-je utiliser Church+ même si mon église est petite ou récente ?",
+    answer: "Oui, Church+ est conçu pour accompagner toutes les églises, quelle que soit leur taille ou leur ancienneté. L’outil s’adapte aussi bien aux grandes communautés qu’aux groupes plus restreints.",
     },
     {
         id: 3,
